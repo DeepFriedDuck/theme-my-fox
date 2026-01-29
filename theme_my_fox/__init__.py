@@ -4,7 +4,19 @@ Expose the high-level helpers from the internal `core` module and a
 package-level `__version__` for consumers and CI.
 """
 
-__version__ = "0.1.3"
+from importlib.metadata import PackageNotFoundError, version as _get_version
+from pathlib import Path
+
+try:
+	__version__ = _get_version("theme-my-fox")
+except PackageNotFoundError:
+	try:
+		import tomllib
+
+		py = Path(__file__).resolve().parents[1] / "pyproject.toml"
+		__version__ = tomllib.loads(py.read_text())["project"]["version"]
+	except Exception:
+		__version__ = "0.0.0"
 
 from .core import (
 	compress,
