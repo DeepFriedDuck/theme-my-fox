@@ -142,5 +142,12 @@ def set_active_theme_in_addon_startup(profile_path: Path, theme_id: str) -> None
 
 __all__ = [
     "decompress",
-    "compress"
+    "compress",
+    "get_firefox_path",
+    "list_profiles",
+    "get_profile_path_by_index",
+    "get_available_themes",
+    "set_active_theme_in_prefs",
+    "set_active_theme_in_extensions",
+    "set_active_theme_in_addon_startup"
 ]
