@@ -133,7 +133,7 @@ def set_active_theme_in_addon_startup(profile_path: Path, theme_id: str) -> None
         data = json.load(fh)
     addons = data.get("app-profile", {}).get("addons", {})
     for aid in list(addons.keys()):
-        if addons[aid]["tpye"] == "theme":
+        if addons[aid]["type"] == "theme":
             addons[aid]["enabled"] = (aid == theme_id)
     with open(temp_path, "w") as fh:
         json.dump(data, fh)

@@ -4,7 +4,7 @@ Expose the high-level helpers from the internal `core` module and a
 package-level `__version__` for consumers and CI.
 """
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 from .core import (
 	compress,
