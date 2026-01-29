@@ -1,6 +1,6 @@
 [project]
 name = "theme-my-fox"
-version = "0.1.2"
+version = "4.3.3"
 description = "Firefox theme helper library"
 authors = [
     {name = "Deepfriedduck", email = "deepfriedduck.opensourceapis@gmail.com"},
