@@ -109,12 +109,13 @@ def set_active_theme_in_extensions(profile_path: Path, theme_id: str) -> None:
     with open(extension_json_path, "r") as fh:
         data = json.load(fh)
     for addon in data.get("addons", []):
-        if addon.get("id") == theme_id:
-            addon["userDisabled"] = False
-            addon["active"] = True
-        else:
-            addon["userDisabled"] = True
-            addon["active"] = False
+        if addon.get("type") == "theme":
+            if addon.get("id") == theme_id:
+                addon["userDisabled"] = False
+                addon["active"] = True
+            else:
+                addon["userDisabled"] = True
+                addon["active"] = False
     with open(extension_json_path, "w") as fh:
         json.dump(data, fh)
 
@@ -132,7 +133,8 @@ def set_active_theme_in_addon_startup(profile_path: Path, theme_id: str) -> None
         data = json.load(fh)
     addons = data.get("app-profile", {}).get("addons", {})
     for aid in list(addons.keys()):
-        addons[aid]["enabled"] = (aid == theme_id)
+        if addons[aid]["tpye"] == "theme":
+            addons[aid]["enabled"] = (aid == theme_id)
     with open(temp_path, "w") as fh:
         json.dump(data, fh)
     # recompress back to profile
