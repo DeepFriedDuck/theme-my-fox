@@ -16,13 +16,10 @@ Welcome to the Theme My Fox documentation wiki! This library helps you programma
 
 ### Guides & Tutorials
 - [Common Use Cases](Common-Use-Cases.md) - Practical examples and recipes
-- [Advanced Usage](Advanced-Usage.md) - Advanced techniques and patterns
 - [Troubleshooting Guide](Troubleshooting-Guide.md) - Solutions to common problems
 
 ### Development
 - [Contributing Guide](Contributing-Guide.md) - How to contribute to the project
-- [Development Setup](Development-Setup.md) - Setting up your development environment
-- [Architecture Overview](Architecture-Overview.md) - Understanding the codebase
 
 ## 🎯 Quick Links
 
@@ -39,7 +36,6 @@ Welcome to the Theme My Fox documentation wiki! This library helps you programma
 ## 🔗 External Resources
 
 - [GitHub Repository](https://github.com/DeepFriedDuck/theme-my-fox)
-- [PyPI Package](https://pypi.org/project/theme-my-fox/)
 - [Issue Tracker](https://github.com/DeepFriedDuck/theme-my-fox/issues)
 
 ## 🤝 Getting Help

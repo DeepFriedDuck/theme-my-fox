@@ -179,3 +179,21 @@ Or for a specific version:
 ```
 git+https://github.com/DeepFriedDuck/theme-my-fox.git@v4.3.3
 ```
+
+## Adding to pyproject.toml
+
+For Poetry:
+
+```toml
+[tool.poetry.dependencies]
+theme-my-fox = {git = "https://github.com/DeepFriedDuck/theme-my-fox.git"}
+```
+
+For PDM:
+
+```toml
+[project]
+dependencies = [
+    "theme-my-fox @ git+https://github.com/DeepFriedDuck/theme-my-fox.git",
+]
+```

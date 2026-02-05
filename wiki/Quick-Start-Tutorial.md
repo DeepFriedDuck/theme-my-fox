@@ -219,7 +219,6 @@ Now that you've completed the quick start:
 - Learn about [Profile Management API](Profile-Management-API.md)
 - Explore [Theme Management API](Theme-Management-API.md)
 - Check out [Common Use Cases](Common-Use-Cases.md) for more examples
-- Read [Advanced Usage](Advanced-Usage.md) for power user tips
 
 ## Getting Help
 

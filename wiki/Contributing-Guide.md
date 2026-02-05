@@ -441,6 +441,5 @@ Thank you for contributing to Theme My Fox! 🦊
 
 ## See Also
 
-- [Development Setup](Development-Setup.md) - Detailed setup instructions
-- [Architecture Overview](Architecture-Overview.md) - Understanding the codebase
+- [Contributing Guide](Contributing-Guide.md) - How to contribute to the project
 - [Troubleshooting Guide](Troubleshooting-Guide.md) - Common issues

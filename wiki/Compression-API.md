@@ -479,4 +479,3 @@ tasklist | findstr firefox
 
 - [Theme Management API](Theme-Management-API.md) - Uses compression for `addonStartup.json.lz4`
 - [Basic Concepts](Basic-Concepts.md) - Understanding LZ4 compression
-- [Advanced Usage](Advanced-Usage.md) - More compression techniques

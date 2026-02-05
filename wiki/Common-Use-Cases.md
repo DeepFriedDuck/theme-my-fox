@@ -536,5 +536,4 @@ if __name__ == "__main__":
 
 - [Theme Management API](Theme-Management-API.md) - API reference
 - [Quick Start Tutorial](Quick-Start-Tutorial.md) - Getting started
-- [Advanced Usage](Advanced-Usage.md) - More advanced patterns
 - [Troubleshooting Guide](Troubleshooting-Guide.md) - Common issues
