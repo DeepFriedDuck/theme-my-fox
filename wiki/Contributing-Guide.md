@@ -441,5 +441,4 @@ Thank you for contributing to Theme My Fox! 🦊
 
 ## See Also
 
-- [Contributing Guide](Contributing-Guide.md) - How to contribute to the project
 - [Troubleshooting Guide](Troubleshooting-Guide.md) - Common issues

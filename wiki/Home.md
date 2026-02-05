@@ -24,14 +24,14 @@ Welcome to the Theme My Fox documentation wiki! This library helps you programma
 ## 🎯 Quick Links
 
 ### Common Tasks
-- [How to switch themes](Theme-Management-API.md#switching-themes)
-- [How to list profiles](Profile-Management-API.md#listing-profiles)
-- [How to decompress Firefox files](Compression-API.md#decompression)
+- [How to switch themes](Theme-Management-API.md)
+- [How to list profiles](Profile-Management-API.md)
+- [How to decompress Firefox files](Compression-API.md)
 
 ### Examples
-- [Theme Scheduler](Common-Use-Cases.md#theme-scheduler)
-- [Backup & Restore](Common-Use-Cases.md#backup-and-restore)
-- [Theme Switcher CLI](Common-Use-Cases.md#command-line-interface)
+- [Theme Scheduler](Common-Use-Cases.md)
+- [Backup & Restore](Common-Use-Cases.md)
+- [Theme Switcher CLI](Common-Use-Cases.md)
 
 ## 🔗 External Resources
 
