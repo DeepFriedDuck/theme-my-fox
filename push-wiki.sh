@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e  # Exit on any error
+
 # Script to push the prepared wiki content to GitHub Wiki
 
 echo "This script will push the wiki content that has been prepared in /tmp/theme-my-fox.wiki"
@@ -10,14 +12,19 @@ if [ ! -d "/tmp/theme-my-fox.wiki" ]; then
     exit 1
 fi
 
-cd /tmp/theme-my-fox.wiki
+cd /tmp/theme-my-fox.wiki || exit 1
 
 echo "Current wiki repository status:"
-git log --oneline -5
+git log --oneline -5 2>/dev/null || echo "No commits yet"
 echo ""
 
 echo "Files to be pushed:"
-git diff --stat origin/master master
+if git rev-parse origin/master >/dev/null 2>&1; then
+    git diff --stat origin/master master 2>/dev/null || git status --short
+else
+    echo "New wiki - all files will be pushed"
+    git status --short
+fi
 echo ""
 
 read -p "Do you want to push these changes to GitHub Wiki? (y/n) " -n 1 -r
